@@ -267,7 +267,7 @@ namespace Manina.Windows.Forms
         /// <summary>
         /// Gets or sets the path to the persistent cache file.
         /// </summary>
-        [Category("Behavior"), Description("Gets or sets the path to the persistent cache file."), Browsable(false)]
+        [Category("Behavior"), Description("Gets or sets the path to the persistent cache file."), Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string PersistentCacheDirectory
         {
             get
@@ -282,7 +282,7 @@ namespace Manina.Windows.Forms
         /// <summary>
         /// Gets or sets the size of the persistent cache file in MB.
         /// </summary>
-        [Category("Behavior"), Description("Gets or sets the size of the persistent cache file in MB."), Browsable(false)]
+        [Category("Behavior"), Description("Gets or sets the size of the persistent cache file in MB."), Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public long PersistentCacheSize
         {
             get
@@ -825,6 +825,7 @@ namespace Manina.Windows.Forms
         /// <summary>
         /// Gets or sets the scroll offset.
         /// </summary>
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         internal Point ViewOffset
         {
             get { return mViewOffset; }
@@ -840,7 +841,7 @@ namespace Manina.Windows.Forms
         /// <summary>
         /// Gets or sets whether the control uses WPF/WIC for thumbnail extraction.
         /// </summary>
-        [Category("Appearance"), Description("Gets or sets whether the control uses for thumbnail extraction.")]
+        [Category("Appearance"), Description("Gets or sets whether the control uses for thumbnail extraction."), DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool UseWIC { get { return Extractor.UseWIC; } set { Extractor.UseWIC = value; } }
 
         /// <summary>

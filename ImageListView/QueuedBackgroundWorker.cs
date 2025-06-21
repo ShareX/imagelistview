@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Threading;
 using System.Drawing;
+using System.Threading;
 
 namespace Manina.Windows.Forms
 {
@@ -316,7 +316,7 @@ namespace Manina.Windows.Forms
         /// <summary>
         /// Gets or sets a value indicating whether or not the worker thread is a background thread.
         /// </summary>
-        [Browsable(true), Description("Gets or sets a value indicating whether or not the worker thread is a background thread."), Category("Behavior")]
+        [Browsable(true), Description("Gets or sets a value indicating whether or not the worker thread is a background thread."), Category("Behavior"), DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool IsBackground
         {
             get { return threads[0].IsBackground; }
